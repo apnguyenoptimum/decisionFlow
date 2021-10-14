@@ -1,0 +1,136 @@
+@import './shared/styles/variables.scss';
+
+.ui-wrapper {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    left: 0;
+    
+    .slim-bar {
+    position: fixed;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 120px;
+    padding: 0;
+    background: $dark-black-bg;
+    color: $light-text-color;
+    overflow-y: scroll;
+    font-size: small;
+    
+    &::-webkit-scrollbar {
+    display: none;
+    }
+    
+    .nav-wrapper {
+    cursor: pointer;
+    width: 100%;
+    min-height: 99px;
+    padding: 1.5em 0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-style: 0.6em;
+    text-transform: uppercase;
+    text-align: center;
+    stroke: $light-text-color;
+    
+    .img-wrapper {
+    background: $primary;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 5px;
+    border-radius: 100px;
+    
+    img {
+    padding-top: 0.95em;
+    }
+    }
+    
+    p {
+    margin-top: 1em;
+    margin-bottom: 0;
+    white-space: pre-line;
+    }
+    
+    &.end {
+    margin: auto 0 1em 0;
+    }
+    
+    &.primary {
+    color: #fff;
+    }
+    
+    &:focus {
+    outline: none;
+    }
+    
+    &:hover {
+    color: #fff;
+    stroke: #fff;
+    }
+    
+    &.is-active {
+    background: $standard-black-bg;
+    color: #fff;
+    stroke: #fff;
+    }
+    }
+    }
+    
+    .mobile-content {
+    position: absolute;
+    margin-top: 90px;
+    height: calc(100vh - 90px);
+    width: 100vw;
+    overflow: hidden;
+    }
+    
+    .desktop-content {
+    margin-left: 120px;
+    width: 100%;
+    }
+    }
+    
+    .mobile {
+    .nav-wrapper {
+    min-height: 9px !important;
+    app-icon {
+    margin-right: 1em;
+    }
+    }
+    
+    .add-issue {
+    margin-top: auto;
+    margin-bottom: 0.5em;
+    }
+    
+    .plus-img-wrapper {
+    background: $primary;
+    margin: 0 1em;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    padding: 7px 9px 9px;
+    
+    img {
+    width: 17px;
+    height: 17px;
+    }
+    }
+    
+    .img-wrapper {
+    margin: 0 0.5em 0 0 !important;
+    stroke: $light-text-color;
+    
+    img {
+    padding-top: 11px !important;
+    }
+    }
+    }
+    
