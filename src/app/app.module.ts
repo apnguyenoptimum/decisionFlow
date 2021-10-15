@@ -9,6 +9,11 @@ import { SpfComponent } from './spf/spf.component';
 import { MapComponent } from './map/map.component';
 import { TrafficManagerComponent } from './traffic-manager/traffic-manager.component';
 import { AdminComponent } from './admin/admin.component';
+import { TopNavComponent } from './deliverables/top-nav/top-nav.component';
+import { FilterComponent } from './deliverables/filter/filter.component';
+import { TableComponent } from './deliverables/table/table.component';
+import { OverviewComponent } from './deliverables/overview/overview.component';
+import { TopPanelComponent } from './deliverables/overview/top-panel/top-panel.component';
 
 
 @NgModule({
@@ -19,7 +24,12 @@ import { AdminComponent } from './admin/admin.component';
     SpfComponent,
     MapComponent,
     TrafficManagerComponent,
-    AdminComponent
+    AdminComponent,
+    TopNavComponent,
+    FilterComponent,
+    TableComponent,
+    OverviewComponent,
+    TopPanelComponent
   ],
   imports: [
     BrowserModule,

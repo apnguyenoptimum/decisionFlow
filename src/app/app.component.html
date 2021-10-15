@@ -2,8 +2,8 @@
   <div class="slim-bar container">
     <div *ngFor="let sidebarNav of sidebarNavs">
       <div class="nav-wrapper" routerLink="{{ sidebarNav.path }}" routerLinkActive="is-active">
-      <app-icon [icon]="'deliverables'"></app-icon>
-      <p>{{ sidebarNav.name }}</p>
+      <app-icon [icon]="sidebarNav.icon"></app-icon>
+      <!-- <p>{{ sidebarNav.name }}</p> -->
       </div>
     </div>
   </div>

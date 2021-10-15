@@ -8,6 +8,7 @@
     flex-direction: row;
     z-index: 1;
     left: 0;
+  
     
     .slim-bar {
     position: fixed;
@@ -16,12 +17,13 @@
     flex-direction: column;
     text-align: center;
     height: 100%;
-    width: 120px;
+    width: 90px;
     padding: 0;
     background: $dark-black-bg;
     color: $light-text-color;
     overflow-y: scroll;
     font-size: small;
+    box-shadow: 0.5px 5px 5px black;
     
     &::-webkit-scrollbar {
     display: none;
@@ -38,6 +40,9 @@
     text-transform: uppercase;
     text-align: center;
     stroke: $light-text-color;
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
     
     .img-wrapper {
     background: $primary;
@@ -92,7 +97,7 @@
     }
     
     .desktop-content {
-    margin-left: 120px;
+    margin-left: 100px;
     width: 100%;
     }
     }
@@ -102,6 +107,9 @@
     min-height: 9px !important;
     app-icon {
     margin-right: 1em;
+    display: flex !important; 
+    justify-content: center !important;
+    align-items: center !important;
     }
     }
     
