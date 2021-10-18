@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'decision-flow';
   sidebarNavs: any;
+  route: any;
 
-  constructor(){
+  constructor(private router: Router){
+    this.route = router;
+    console.log(router, 'the route', router.url)
+    console.log(this.route.url == '/')
     this.sidebarNavs = [
       {
         path: 'deliverables',

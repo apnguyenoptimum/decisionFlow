@@ -14,6 +14,9 @@ import { FilterComponent } from './deliverables/filter/filter.component';
 import { TableComponent } from './deliverables/table/table.component';
 import { OverviewComponent } from './deliverables/overview/overview.component';
 import { DeliverablesModule } from './deliverables/deliverables.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './login/login.component';
+import { LoginModule } from './login/login.module'
 
 
 @NgModule({
@@ -28,13 +31,16 @@ import { DeliverablesModule } from './deliverables/deliverables.module';
     FilterComponent,
     TableComponent,
     OverviewComponent,
-    TopNavComponent
+    TopNavComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     IconsModule,
-    DeliverablesModule
+    DeliverablesModule,
+    BrowserAnimationsModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

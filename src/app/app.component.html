@@ -1,5 +1,5 @@
-<div class="ui-wrapper"  >
-  <div class="slim-bar container">
+<div class="ui-wrapper">
+  <div *ngIf="!route.url.includes('login') || route.url == '/'" class="slim-bar container">
     <div *ngFor="let sidebarNav of sidebarNavs">
       <div class="nav-wrapper" routerLink="{{ sidebarNav.path }}" routerLinkActive="is-active">
       <app-icon [icon]="sidebarNav.icon"></app-icon>
@@ -11,3 +11,5 @@
     <router-outlet></router-outlet>
     </div>
 </div>
+
+<!-- !route.url.includes('login') || -->

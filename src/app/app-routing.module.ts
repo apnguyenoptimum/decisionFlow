@@ -5,12 +5,17 @@ import { ExplodedComponent } from './exploded/exploded.component';
 import { MapComponent } from './map/map.component';
 import { SpfComponent } from './spf/spf.component';
 import { TrafficManagerComponent } from './traffic-manager/traffic-manager.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'deliverables',
+    redirectTo: 'login',
     pathMatch: 'full'
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: 'deliverables',
