@@ -13,7 +13,7 @@ import { TopNavComponent } from './deliverables/top-nav/top-nav.component';
 import { FilterComponent } from './deliverables/filter/filter.component';
 import { TableComponent } from './deliverables/table/table.component';
 import { OverviewComponent } from './deliverables/overview/overview.component';
-import { TopPanelComponent } from './deliverables/overview/top-panel/top-panel.component';
+import { DeliverablesModule } from './deliverables/deliverables.module';
 
 
 @NgModule({
@@ -25,16 +25,16 @@ import { TopPanelComponent } from './deliverables/overview/top-panel/top-panel.c
     MapComponent,
     TrafficManagerComponent,
     AdminComponent,
-    TopNavComponent,
     FilterComponent,
     TableComponent,
     OverviewComponent,
-    TopPanelComponent
+    TopNavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    IconsModule
+    IconsModule,
+    DeliverablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-top-nav',
@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-nav.component.scss']
 })
 export class TopNavComponent implements OnInit {
+  @Output() selected: EventEmitter<any> = new EventEmitter();
 
+  onClick(e: any){
+    this.selected.emit(e)
+  }
   constructor() { }
 
   ngOnInit(): void {
