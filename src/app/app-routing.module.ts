@@ -10,7 +10,7 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'deliverables',
     pathMatch: 'full'
   },
   {
